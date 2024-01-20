@@ -20,3 +20,13 @@ html {
    background-color: rgb(var(--background-end-rgb));
 }
 
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: rgb(var(--background-end-rgb)); */
+  padding-bottom: env(safe-area-inset-bottom);
+  background-color: #000;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", "arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

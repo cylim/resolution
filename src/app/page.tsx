@@ -1,7 +1,7 @@
 "use client";
 
-import Footer from "@/layouts/Footer";
-import Header from "@/layouts/Header";
+import Footer from "@/components/layouts/Footer";
+import Header from "@/components/layouts/Header";
 import { initJuno } from "@junobuild/core-peer";
 import { NextUIProvider } from "@nextui-org/react";
 import { Toaster } from "react-hot-toast";

@@ -8,6 +8,7 @@ import { Toaster } from "react-hot-toast";
 import redpandaImg from '@/assets/images/redpanda.jpg';
 import { useEffect } from "react";
 import { SATELITE_ID } from "@/config/env";
+import { GeneralStats } from "@/components/stats/GeneralStats";
 
 export default function Home() {
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function Home() {
             <div className="mx-auto max-w-2xl pt-10">
               <div className="text-center">
                 <p>Hello, World!</p>
+                <GeneralStats />
               </div>
             </div>
           </div>

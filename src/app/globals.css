@@ -30,3 +30,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.card-blue {
+  background-color: #184EE495;
+}
+.card-red {
+  background-color: #FF004095;
+}

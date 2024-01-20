@@ -2,11 +2,20 @@
 
 import Footer from "@/layouts/Footer";
 import Header from "@/layouts/Header";
+import { initJuno } from "@junobuild/core-peer";
 import { NextUIProvider } from "@nextui-org/react";
 import { Toaster } from "react-hot-toast";
 import redpandaImg from '@/assets/images/redpanda.jpg';
+import { useEffect } from "react";
+import { SATELITE_ID } from "@/config/env";
 
 export default function Home() {
+  useEffect(() => {
+    (async () =>
+      await initJuno({
+        satelliteId: SATELITE_ID,
+      }))();
+  }, []);
 
   return (
     <NextUIProvider>

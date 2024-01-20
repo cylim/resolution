@@ -2,7 +2,6 @@ import type { Config } from 'tailwindcss'
 import { nextui } from '@nextui-org/react'
 const plugin = require('tailwindcss/plugin')
 
-
 const config: Config = {
   important: true,
   content: [

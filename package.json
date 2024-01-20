@@ -10,6 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@junobuild/core-peer": "^0.0.9",
     "@nextui-org/react": "^2.2.9",
     "framer-motion": "^10.16.16",
     "next": "14.0.1",

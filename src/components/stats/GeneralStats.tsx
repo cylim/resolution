@@ -4,8 +4,8 @@ import { StatCard } from "./StatCard"
 const colors = ['red', 'blue']
 
 const items = [
-  { title: 'DAO Funded', accounts: charities.filter(c => !c.isCharity).map(c => c.walletAddress) },
   { title: 'Donated', accounts: charities.filter(c => !!c.isCharity).map(c => c.walletAddress) },
+  { title: 'DAO Funded', accounts: charities.filter(c => !!c.isDAO).map(c => c.walletAddress) },
 ]
 
 export const GeneralStats = () => {

@@ -8,10 +8,8 @@ export interface ITask  {
   keyId: string
   donationAddress: string,
   amount:string,
-  completionTimestamp: BigInt
-  deadlineTimestamp: BigInt
+  completionTimestamp: number
+  deadlineTimestamp: number
   txHash?: string
-  createdAt: BigInt
-  updatedAt: BigInt
 } 
 

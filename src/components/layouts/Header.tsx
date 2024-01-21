@@ -1,8 +1,6 @@
 import NextImage from 'next/image'
 import reLogo from '@/assets/logo/logo.png'
-import dynamic from "next/dynamic";
-
-const ConnectKitButton = dynamic(async () => (await import('connectkit')).ConnectKitButton, { ssr: false })
+import { ConnectKitButton } from 'connectkit'
 
 export const Header = async () => {
 

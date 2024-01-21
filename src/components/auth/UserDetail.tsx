@@ -7,6 +7,7 @@ import { formatEther } from 'viem'
 import Contracts from "@/contracts";
 import { Link } from "@nextui-org/react";
 import { useAccount } from "wagmi";
+import numeral from 'numeral'
 
 const BalanceCard = ({ token, contract }: { token: string, address: `0x${string}`, contract?: typeof Contracts.typeDef.fulToken }) => {
   const { address } = useAccount();
@@ -45,7 +46,7 @@ const BalanceCard = ({ token, contract }: { token: string, address: `0x${string}
     className={`md:w-[200px] w-full`}
   >
     <section className={`transition-opacity duration-1000 overflow-hidden text w-full h-full`}>
-      <span className={'font-medium text-4xl tracking-tight leading-normal text-center'}>{formatEther(amount)} <span className={'font-medium text-lg tracking-tight leading-normal text-center'}>{token}</span></span>
+      <span className={'font-medium text-4xl tracking-tight leading-normal text-center'}>{numeral(formatEther(amount)).format('0[.]0[00000]a')} <span className={'font-medium text-lg tracking-tight leading-normal text-center'}>{token}</span></span>
     </section>
   </div>
 }

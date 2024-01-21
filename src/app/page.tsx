@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { SATELITE_ID } from "@/config/env";
 import { GeneralStats } from "@/components/stats/GeneralStats";
 import AuthProvider from "@/components/auth/AuthProvider";
+import { UserDetail } from "@/components/auth/UserDetail";
 
 export default function Home() {
   useEffect(() => {
@@ -29,6 +30,7 @@ export default function Home() {
               <div className="mx-auto max-w-2xl pt-10">
                 <div className="text-center">
                   <p>Hello, World!</p>
+                  <UserDetail />
                   <GeneralStats />
                 </div>
               </div>

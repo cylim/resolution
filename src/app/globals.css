@@ -31,9 +31,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.box-wrapper {
+  border-radius: 20px;
+  padding: 35px 40px;
+  margin: 0 0 40px;
+  background: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(15px);
+  box-shadow: 1px 1px 20px rgba(0,0,0,0.19);
+  color: #111;
+}
+
 .card-blue {
   background-color: #184EE495;
 }
 .card-red {
   background-color: #FF004095;
+}
+.card-black {
+  background: rgba(0, 0, 0, 0.6) !important; 
+  border:rgba(255, 255, 255, 0.8) solid 1px;
+  color: #fff !important;
 }

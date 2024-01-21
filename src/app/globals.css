@@ -52,3 +52,43 @@ body {
   border:rgba(255, 255, 255, 0.8) solid 1px;
   color: #fff !important;
 }
+
+.primary-button {
+  background: linear-gradient(270deg, #ff0099, #493240, #2b5876, #4e4376);
+  background-size: 800% 800%;
+  animation: gradient 15s ease infinite;
+  color: white;
+  border: none;
+  border-radius: 50px!important;
+  padding: 30px 35px;
+  font-size: 1.1em!important;
+  font-weight: 500!important;
+  letter-spacing: -0.02rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary-button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 1px 1px 20px rgba(0,0,0,0.19);
+}
+
+.primary-button[disabled] {
+  opacity: 0.5;
+}
+
+.primary-button.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+p.terms-conditions {
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+}

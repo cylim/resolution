@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import Box from "@/components/layouts/Box"
 import { formatAddress } from "@/utils/strings";

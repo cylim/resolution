@@ -1,3 +1,4 @@
+"use client";
 import { ConnectKitProvider } from "connectkit"
 
 export function ConnectProvider({ children }: { children: React.ReactNode }) {

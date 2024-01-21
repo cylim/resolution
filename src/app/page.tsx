@@ -9,6 +9,7 @@ import redpandaImg from '@/assets/images/redpanda.jpg';
 import { useEffect } from "react";
 import { SATELITE_ID } from "@/config/env";
 import { GeneralStats } from "@/components/stats/GeneralStats";
+import AuthProvider from "@/components/auth/AuthProvider";
 
 export default function Home() {
   useEffect(() => {
@@ -20,20 +21,22 @@ export default function Home() {
 
   return (
     <NextUIProvider>
-      <div className="min-h-screen background overflow-y-auto bg-cover bg-center bg-[#00000090] bg-blend-hue overflow-x-hidden" style={{ backgroundImage: `url(${redpandaImg.src})` }}>
-        <Header />
-        <main>
-          <div className="relative px-0 md:px-4 lg:px-8">
-            <div className="mx-auto max-w-2xl pt-10">
-              <div className="text-center">
-                <p>Hello, World!</p>
-                <GeneralStats />
+      <AuthProvider>
+        <div className="min-h-screen background overflow-y-auto bg-cover bg-center bg-[#00000090] bg-blend-hue overflow-x-hidden" style={{ backgroundImage: `url(${redpandaImg.src})` }}>
+          <Header />
+          <main>
+            <div className="relative px-0 md:px-4 lg:px-8">
+              <div className="mx-auto max-w-2xl pt-10">
+                <div className="text-center">
+                  <p>Hello, World!</p>
+                  <GeneralStats />
+                </div>
               </div>
             </div>
-          </div>
-        </main>
-        <Footer />
-      </div>
+          </main>
+          <Footer />
+        </div>
+      </AuthProvider>
       <Toaster
         toastOptions={{
           className: 'w-full',

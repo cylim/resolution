@@ -15,12 +15,12 @@ interface IContract {
 export const Contracts = {
   [scrollSepolia.name]: {
     fulToken: {
-      address: '0x765D0C57b993D3eD180001b817a6bCc13Ce7044e',
+      address: '0x7e3c1F73F267Ec0789df187915f5E473ECc4aB80',
       abi: fulgensABI,
       chainId: scrollSepolia.id,
     },
     challenge: {
-      address: '0x0d36FfaA0711B805498675CDbF40607b48c85653',
+      address: '0x1E0436DDe892910827a5491e2691656Bc3D4E011',
       abi: challengeABI,
       chainId: scrollSepolia.id,
     },

@@ -83,7 +83,7 @@ export const UserDetail = () => {
       <BalanceCard token={'FUL'} address={address} contract={Contracts[chain.name].fulToken} />
     </div>
     <div className={'pt-4'}>
-      <p>Sepolia testnet <Link href={'https://www.infura.io/faucet/sepolia'} target="_blank" rel="noopener" isExternal>(faucet)</Link></p>
+      <p>Scroll Sepolia <Link href={'https://docs.scroll.io/en/user-guide/faucet/'} target="_blank" rel="noopener" isExternal>(faucet)</Link></p>
     </div>
   </Box>
 }

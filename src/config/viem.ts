@@ -1,8 +1,8 @@
-import { sepolia } from 'viem/chains'
+import { scrollSepolia } from 'viem/chains'
 import { createPublicClient, http } from 'viem'
 
-export const chain = sepolia
+export const chain = scrollSepolia
 export const publicClient = createPublicClient({
-  chain: sepolia,
+  chain: scrollSepolia,
   transport: http()
 })

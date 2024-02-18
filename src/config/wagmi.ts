@@ -1,12 +1,12 @@
 import { getDefaultConfig } from 'connectkit'
 import { configureChains, createConfig } from 'wagmi'
-import { sepolia as sep } from 'wagmi/chains'
+import { scrollSepolia } from 'wagmi/chains'
 import { publicProvider } from 'wagmi/providers/public'
 import { chain } from './viem'
 
 const walletConnectProjectId = process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID || 'ad88a7fba1ca3be8bd78d6c719fc304a'
 
-const chains = process.env.NEXT_PUBLIC_NODE_ENV === 'production' ? [sep] : [sep]
+const chains = process.env.NEXT_PUBLIC_NODE_ENV === 'production' ? [scrollSepolia] : [scrollSepolia]
 
 const { publicClient } = configureChains(chains, [publicProvider()])
 
